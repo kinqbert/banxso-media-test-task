@@ -1,0 +1,22 @@
+@import '../../styles/colors.scss';
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff0000; 
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+
+  background: $white;
+  opacity: 0.4;
+
+  &:not(:last-child) {
+    margin-right: 10px !important;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
