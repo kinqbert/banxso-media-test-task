@@ -1,0 +1,52 @@
+@import '../../styles/colors.scss';
+
+.about-us-section {
+  margin-top: 100px;
+
+  &__title {
+    text-align: center;
+
+    text-transform: uppercase;
+  }
+
+  &__video-wrapper {
+    position: relative;
+  }
+
+  &__video {
+    width: 100%;
+
+    margin-top: 32px;
+
+    object-fit: contain;
+
+    border: 1px solid $section-border;
+    border-radius: 40px;
+  }
+
+  &__video-play-button {
+    width: 178px;
+    height: 178px;
+    
+    padding: 45px;
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+
+    background-color: #FFFFFF1A;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+
+  &__video-play-button-icon {
+    width: 100%;
+    height: 100%;
+
+    aspect-ratio: 1 / 1;
+  }
+}

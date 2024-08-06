@@ -18,7 +18,7 @@ export default function Card({ rocket }: Props) {
         <p className="card__title">{rocket.name}</p>
         <ul className="card__props">
           {rocketProps.map((rocketProp) => (
-            <li className="card__prop">
+            <li key={rocketProp.name} className="card__prop">
               <span className="card__prop-name">{rocketProp.name}</span>
               <span className="card__prop-value">{rocketProp.value}</span>
             </li>

@@ -1,11 +1,7 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body,
@@ -42,4 +38,9 @@ td {
 ol,
 li {
   list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

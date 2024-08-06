@@ -19,6 +19,7 @@ export default function RocketsSection() {
 
   return (
     <section className="rockets-section">
+      <h2 className="rockets-section__title">Our rockets</h2>
       <RocketCardsSlider rockets={rockets} />
     </section>
   );

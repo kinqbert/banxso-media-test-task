@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASIC_URL = "https://api.spacexdata.com/v4/dragons";
+const BASIC_URL = "http://localhost:5173/src/api/testrockets.json";
 
 const apiClient = axios.create({
   baseURL: BASIC_URL,
