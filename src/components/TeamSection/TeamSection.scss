@@ -1,0 +1,55 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/colors.scss";
+
+.team-section {
+  margin-top: 100px;
+
+  @include grid-align;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    grid-column: 1 / 5;
+  }
+
+  &__right {
+    grid-column: 5 / -1;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 24px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__button {
+    width: 126px;
+    height: 126px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 20px;
+    background-color: $white;
+
+    &--inactive {
+      opacity: 0.3;
+    }
+  }
+
+  &__button-icon {
+    
+  }
+}

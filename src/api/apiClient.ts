@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASIC_URL = "http://localhost:5173/src/api/testrockets.json";
+const BASIC_URL = "http://localhost:5173/src/api";
 
 const apiClient = axios.create({
   baseURL: BASIC_URL,

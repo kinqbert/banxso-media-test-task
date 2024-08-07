@@ -1,3 +1,4 @@
+import { SphereIcon } from "../Icons";
 import "./HeadlineSection.scss";
 
 export default function HeadlineSection() {
@@ -20,11 +21,7 @@ export default function HeadlineSection() {
           Dive deep in to the future
         </h1>
         <div className="headline-section__bottom">
-          <img
-            className="headline-section__bottom-sphere"
-            src="./src/assets/icons/sphere-icon.svg"
-            alt=""
-          />
+        <SphereIcon />
           <div className="headline-section__bottom-line"></div>
         </div>
       </div>

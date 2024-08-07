@@ -1,5 +1,7 @@
 import { useSwiper } from "swiper/react";
 
+import { ArrowLeftIcon, ArrowRightIcon } from "../Icons";
+
 import "./RocketCardsSliderNav.scss";
 
 export default function RocketCardsSliderNav() {
@@ -11,14 +13,14 @@ export default function RocketCardsSliderNav() {
         className="rocket-cards-slider-nav__button"
         onClick={() => swiper.slidePrev()}
       >
-        <img src="./src/assets/icons/arrow-left.svg" alt="Left arrow" />
+        <ArrowLeftIcon />
       </button>
 
       <button
         className="rocket-cards-slider-nav__button"
         onClick={() => swiper.slideNext()}
       >
-        <img src="./src/assets/icons/arrow-right.svg" alt="Right arrow" />
+        <ArrowRightIcon />
       </button>
     </div>
   );

@@ -1,3 +1,5 @@
+import { PlayIcon } from "../Icons";
+
 import "./AboutUsSection.scss";
 
 export default function AboutUsSection() {
@@ -11,7 +13,7 @@ export default function AboutUsSection() {
           alt="Video Preview Image"
         />
         <div className="about-us-section__video-play-button">
-          <img className="about-us-section__video-play-button-icon" src="./src/assets/icons/play-icon.svg" alt="Video Play Button" />
+          <PlayIcon />
         </div>
       </div>
     </section>
