@@ -3,24 +3,47 @@ import { useEffect, useState } from "react";
 
 import Rocket from "../../types/Rocket";
 
-import { getRocket } from "../../api/api";
+import { getRocket, getSlides } from "../../api/api";
 
+import getRocketProps from "../../utils/getRocketProps";
+
+import FullWidthSlider from "../../components/FullWidthSlider";
 import Navigation from "../../components/Navigation";
 
 import "./RocketPage.scss";
-
-// http://localhost:5173/#/5e9d058859b1ffd1261368e2ad5f90
+import Slide from "../../types/Slide";
 
 export default function RocketPage() {
   const { rocketId } = useParams();
   const [rocket, setRocket] = useState<Rocket>();
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
+  const [rocketProps, setRocketProps] = useState<
+    { name: string; value: string }[]
+  >([]);
+  const [slides, setSlides] = useState<Slide[]>([]);
 
   useEffect(() => {
     if (rocketId) {
-      getRocket(rocketId).then((response) => setRocket(response));
+      getRocket(rocketId).then((response) => {
+        setRocket(response);
+
+        if (rocket) {
+          setRocketProps(() => getRocketProps(rocket, true));
+
+          getSlides().then((response) => setSlides(response));
+        }
+
+        setLoading(false);
+      });
     }
-  }, [rocketId]);
+  }, [rocket, rocketId]);
+
+  if (loading) {
+    return <h3>Loading..</h3>;
+  }
+  if (!rocket) {
+    return <h3>This rocket doesn't exist..</h3>;
+  }
 
   return (
     <main className="rocket-page">
@@ -28,9 +51,44 @@ export default function RocketPage() {
         <Navigation />
         <h2 className="rocket-page__title">{rocket?.name}</h2>
         <div className="rocket-page__rocket-info">
-          
+          <img
+            src={rocket?.flickr_images[0]}
+            alt={`${rocket?.name} image`}
+            className="rocket-page__rocket-image"
+          />
+          <div className="rocket-page__rocket-stats">
+            <h3 className="rocket-page__rocket-stats-name">{rocket?.name}</h3>
+            <div className="rocket-page__rocket-stats-props">
+              {rocketProps.map((rocketProp) => (
+                <div
+                  key={rocketProp.name}
+                  className="rocket-page__rocket-stats-prop"
+                >
+                  <span>{rocketProp.name}</span>
+                  <span>{rocketProp.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
+      <section className="rocket-page__ship-full-width-slider">
+        <FullWidthSlider slides={slides} />
+      </section>
+      <section className="rocket-page__starbase-section">
+        <div className="rocket-page__starbase-section-photo">
+          <div className="container">
+            <div className="rocket-page__starbase-section-text">
+              <h2 className="rocket-page__starbase-section-title">Starbase</h2>
+              <p className="rocket-page__starbase-section-description">
+                Development and manufacturing of Starship takes place at
+                Starbase, one of the world’s first commercial spaceports
+                designed for orbital missions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
