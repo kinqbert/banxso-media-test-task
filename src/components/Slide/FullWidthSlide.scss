@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.full-width-slide {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @include content-padding-inline;
+  }
+
+  &__text-content {
+    max-width: 453px;
+
+    position: absolute;
+    bottom: 126px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 24px;
+
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+

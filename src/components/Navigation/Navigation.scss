@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+@import '../../styles/colors.scss';
+
+.nav {
+  padding: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-transform: uppercase;
+
+  &__list {
+    display: flex;
+    gap: 48px;
+  }
+
+  &__logo {
+    padding: 8px 12px;
+
+    border: 1px solid $white;
+    border-radius: 21px;
+  }
+
+  &__contact-button {
+    padding: 8px 12px;
+
+    color: $white;
+    background: none;
+
+    border: 1px solid $white;
+    border-radius: 21px;
+
+    cursor: pointer;
+
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+  }
+}

@@ -1,4 +1,4 @@
-import { TeamMember } from "../../types/TeamMember";
+import TeamMember  from "../../types/TeamMember";
 
 import "./TeamMemberCard.scss";
 

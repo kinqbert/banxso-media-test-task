@@ -1,7 +1,18 @@
-@import './styles/reset.scss';
-@import './styles/fonts.scss';
-@import './styles/typography.scss';
+@import "./styles/reset.scss";
+@import "./styles/fonts.scss";
+@import "./styles/typography.scss";
+@import "./styles/variables.scss";
+@import "./styles/mixins.scss";
 
 #root {
   margin: 0 auto;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+
+  padding-top: 48px;
+
+  @include content-padding-inline;
 }

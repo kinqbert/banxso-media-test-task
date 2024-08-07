@@ -1,21 +1,13 @@
 import { SphereIcon } from "../Icons";
+
+import Navigation from "../Navigation";
+
 import "./HeadlineSection.scss";
 
 export default function HeadlineSection() {
   return (
     <section className="headline-section">
-      <nav className="headline-section__nav">
-        <div className="headline-section__nav-logo">Logo</div>
-        <ul className="headline-section__nav-list">
-          <li className="headline-section__nav-item">Home</li>
-          <li className="headline-section__nav-item">About</li>
-          <li className="headline-section__nav-item">QA</li>
-          <li className="headline-section__nav-item">Contact form</li>
-        </ul>
-        <button className="headline-section__contact-button">
-          Contact form
-        </button>
-      </nav>
+      <Navigation />
       <div className="headline-section__content">
         <h1 className="headline-section__headline">
           Dive deep in to the future

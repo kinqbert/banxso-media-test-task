@@ -1,0 +1,35 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.full-width-slider {
+  position: relative;
+}
+
+.swiper-controls {
+  width: 100%;
+  max-width: $container-max-width;
+  height: 62px;
+  
+  position: absolute;
+  bottom: 1px;
+  height: auto;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  @include content-padding-inline;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  width: 62px;
+  height: 62px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

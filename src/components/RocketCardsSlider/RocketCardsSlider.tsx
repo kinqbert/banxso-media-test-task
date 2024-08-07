@@ -1,14 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import "swiper/scss";
 import "swiper/scss/pagination";
 
 import Rocket from "../../types/Rocket";
 
 import Card from "../Card";
-import RocketCardsSliderNav from "../RocketCardsSliderNav";
+import SliderNav from "../SliderNav";
 
 import "./RocketCardsSlider.scss";
-import { Pagination } from "swiper/modules";
+
 
 interface Props {
   rockets: Rocket[];
@@ -29,7 +30,7 @@ export default function RocketCardsSlider({ rockets }: Props) {
             <Card rocket={rocket} />
           </SwiperSlide>
         ))}
-        <RocketCardsSliderNav />
+        <SliderNav />
       </Swiper>
     </div>
   );

@@ -2,9 +2,9 @@ import { useSwiper } from "swiper/react";
 
 import { ArrowLeftIcon, ArrowRightIcon } from "../Icons";
 
-import "./RocketCardsSliderNav.scss";
+import "./SliderNav.scss";
 
-export default function RocketCardsSliderNav() {
+export default function SliderNav() {
   const swiper = useSwiper();
 
   return (

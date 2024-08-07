@@ -3,7 +3,7 @@
 .headline-section {
   text-transform: uppercase;
 
-  border: 1px solid $section-border;
+  border: 1px solid $border;
   border-radius: 60px;
 
   background-position: left -30% bottom 30%;
@@ -14,44 +14,6 @@
   font-weight: 400;
 
   background-image: url("../../assets/images/headline-background.gif");
-
-  &__nav {
-    padding: 32px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__nav-list {
-    display: flex;
-    gap: 48px;
-  }
-
-  &__nav-logo {
-    padding: 8px 12px;
-
-    border: 1px solid $white;
-    border-radius: 21px;
-  }
-
-  &__contact-button {
-    padding: 8px 12px;
-
-    text-transform: uppercase;
-
-    color: $white;
-    background: none;
-
-    border: 1px solid $white;
-    border-radius: 21px;
-
-    cursor: pointer;
-
-    font-family: Rubik;
-    font-size: 16px;
-    font-weight: 400;
-  }
 
   &__content {
     margin-top: 50px;

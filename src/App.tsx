@@ -1,6 +1,7 @@
 import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 
 import MainPage from './pages/MainPage';
+import RocketPage from './pages/RocketPage';
 
 import './App.scss'
 
@@ -9,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        {/* <Route path="/:taskId" element={<TaskPage />} /> */}
+        <Route path="/:rocketId" element={<RocketPage />} />
       </Routes>
     </Router>
   );

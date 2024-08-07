@@ -6,7 +6,7 @@ import "swiper/scss";
 
 import TeamMemberCard from "../TeamMemberCard";
 
-import { TeamMember } from "../../types/TeamMember";
+import TeamMember from "../../types/TeamMember";
 import { getTeamMembers } from "../../api/api";
 
 import "./TeamSection.scss";
