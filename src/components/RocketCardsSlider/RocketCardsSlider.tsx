@@ -10,7 +10,6 @@ import SliderNav from "../SliderNav";
 
 import "./RocketCardsSlider.scss";
 
-
 interface Props {
   rockets: Rocket[];
 }

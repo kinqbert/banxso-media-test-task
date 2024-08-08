@@ -3,6 +3,7 @@ import Rocket from "../../types/Rocket";
 import getRocketProps from "../../utils/getRocketProps";
 
 import "./Card.scss";
+import { Link } from "react-router-dom";
 
 interface Props {
   rocket: Rocket;
@@ -13,9 +14,14 @@ export default function Card({ rocket }: Props) {
 
   return (
     <div className="card">
-      <img className="card__image" src={rocket.flickr_images[0]} alt="" />
+      <Link to={rocket.id}>
+        <img className="card__image" src={rocket.flickr_images[0]} alt="" />
+      </Link>
       <div className="card__content">
-        <p className="card__title">{rocket.name}</p>
+        <Link to={rocket.id}>
+          <p className="card__title">{rocket.name}</p>
+        </Link>
+
         <ul className="card__props">
           {rocketProps?.map((rocketProp) => (
             <li key={rocketProp.name} className="card__prop">

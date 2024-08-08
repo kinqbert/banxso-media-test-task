@@ -5,21 +5,17 @@ import Rocket from "../../types/Rocket";
 
 import { getRocket, getSlides } from "../../api/api";
 
-import getRocketProps from "../../utils/getRocketProps";
-
 import FullWidthSlider from "../../components/FullWidthSlider";
 import Navigation from "../../components/Navigation";
 
 import "./RocketPage.scss";
 import Slide from "../../types/Slide";
+import RocketInfo from "../../components/RocketInfo";
 
 export default function RocketPage() {
   const { rocketId } = useParams();
   const [rocket, setRocket] = useState<Rocket>();
   const [loading, setLoading] = useState(true);
-  const [rocketProps, setRocketProps] = useState<
-    { name: string; value: string }[]
-  >([]);
   const [slides, setSlides] = useState<Slide[]>([]);
 
   useEffect(() => {
@@ -28,8 +24,6 @@ export default function RocketPage() {
         setRocket(response);
 
         if (rocket) {
-          setRocketProps(() => getRocketProps(rocket, true));
-
           getSlides().then((response) => setSlides(response));
         }
 
@@ -49,28 +43,7 @@ export default function RocketPage() {
     <main className="rocket-page">
       <div className="container">
         <Navigation />
-        <h2 className="rocket-page__title">{rocket?.name}</h2>
-        <div className="rocket-page__rocket-info">
-          <img
-            src={rocket?.flickr_images[0]}
-            alt={`${rocket?.name} image`}
-            className="rocket-page__rocket-image"
-          />
-          <div className="rocket-page__rocket-stats">
-            <h3 className="rocket-page__rocket-stats-name">{rocket?.name}</h3>
-            <div className="rocket-page__rocket-stats-props">
-              {rocketProps.map((rocketProp) => (
-                <div
-                  key={rocketProp.name}
-                  className="rocket-page__rocket-stats-prop"
-                >
-                  <span>{rocketProp.name}</span>
-                  <span>{rocketProp.value}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <RocketInfo rocket={rocket} />
       </div>
       <section className="rocket-page__ship-full-width-slider">
         <FullWidthSlider slides={slides} />

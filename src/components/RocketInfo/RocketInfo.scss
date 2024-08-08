@@ -1,0 +1,55 @@
+@import '../../styles/colors.scss';
+
+.rocket-info {
+  &__wrapper {
+    max-height: 530px;
+    margin-top: 32px;
+    padding: 24px;
+
+    display: flex;
+    gap: 24px;
+
+    border: 1px solid $border;
+    border-radius: 40px;
+  }
+
+  &__rocket-image {
+    flex: 2;
+    object-fit: cover;
+    overflow: auto;
+
+    border-radius: 20px;
+    border: 1px solid $border;
+  }
+
+  &__rocket-stats {
+    flex: 1;
+
+    text-transform: uppercase;
+  }
+
+  &__rocket-stats-name {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__rocket-stats-props {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 14px;
+  }
+
+  &__rocket-stats-prop {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid $border;
+  }
+}
