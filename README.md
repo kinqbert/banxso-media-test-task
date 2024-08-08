@@ -11,6 +11,12 @@ Additionally, mock data has been created to display for slides and team members:
 
 Sliders were implemented using [Swiper](https://swiperjs.com/react) library.
 
+> ❗️ Notes
+>
+> - The application adaptive design is out of scope.
+>
+> - Video file is not included in the project, placeholder image is used instead.
+
 # Technologies used
 
 - [React](https://reactjs.org/)
