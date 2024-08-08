@@ -1,15 +1,12 @@
 import axios from "axios";
 
-const ROCKETS_URL = "http://localhost:5173/src/api";
-const API_URL = "https://"
+const BASIC_URL = "http://localhost:5173/src/api";
 
 export const rocketsApiClient = axios.create({
-  baseURL: ROCKETS_URL,
+  baseURL: BASIC_URL,
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
   },
 });
 
-
-export default apiClient;
