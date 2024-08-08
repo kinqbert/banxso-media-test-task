@@ -2,31 +2,31 @@
   {
     "title": "Starship capabilities",
     "description": "As the most powerful launch system ever developed, Starship will be able to carry up to 100 people on long-duration, interplanetary flights. Starship will also help enable satellite delivery, the development of a Moon base, and point-to-point transport here on Earth.",
-    "image": "/banxso-media-test-task/images/testSlide.jpg"
+    "image": "images/testSlide.jpg"
   },
   {
     "title": "Mars Rover Missions",
     "description": "NASA's Mars Rover missions have been exploring the Martian surface for years, providing valuable data about the planet's geology and potential for past life. Rovers like Curiosity and Perseverance continue to make groundbreaking discoveries.",
-    "image": "/banxso-media-test-task/images/testSlide.jpg"
+    "image": "images/testSlide.jpg"
   },
   {
     "title": "International Space Station",
     "description": "The International Space Station (ISS) is a joint project between multiple space agencies, serving as a microgravity laboratory for scientific research and international cooperation in space.",
-    "image": "/banxso-media-test-task/images/testSlide.jpg"
+    "image": "images/testSlide.jpg"
   },
   {
     "title": "SpaceX Falcon 9",
     "description": "SpaceX's Falcon 9 rocket has revolutionized space travel with its reusable design, significantly reducing the cost of launching payloads into orbit. It has become a workhorse for both commercial and government missions.",
-    "image": "/banxso-media-test-task/images/testSlide.jpg"
+    "image": "images/testSlide.jpg"
   },
   {
     "title": "James Webb Space Telescope",
     "description": "The James Webb Space Telescope, set to launch in 2021, will be the most powerful space telescope ever built. It aims to study the universe's first galaxies and provide unprecedented insights into the formation of stars and planets.",
-    "image": "/banxso-media-test-task/images/testSlide.jpg"
+    "image": "images/testSlide.jpg"
   },
   {
     "title": "Future Moon Missions",
     "description": "NASA's Artemis program aims to return humans to the Moon by 2024, with plans for sustainable exploration and the establishment of a lunar base. This initiative will pave the way for future missions to Mars and beyond.",
-    "image": "/banxso-media-test-task/images/testSlide.jpg"
+    "image": "images/testSlide.jpg"
   }
 ]
