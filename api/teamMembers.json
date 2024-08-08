@@ -2,51 +2,51 @@
   {
     "name": "Alex Johnson",
     "position": "Software Engineer",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "Maria Lopez",
     "position": "Project Manager",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "James Smith",
     "position": "UX Designer",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "Emily Davis",
     "position": "Data Scientist",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "Michael Brown",
     "position": "DevOps Engineer",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "Sophia Wilson",
     "position": "Frontend Developer",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "David Lee",
     "position": "Backend Developer",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "Emma Clark",
     "position": "QA Engineer",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "Daniel Martinez",
     "position": "Business Analyst",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   },
   {
     "name": "Olivia Hernandez",
     "position": "Product Owner",
-    "photo": "/banxso-media-test-task/images/teamMember.png"
+    "photo": "images/teamMember.png"
   }
 ]
