@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import Rocket from "../../types/Rocket";
@@ -33,10 +33,20 @@ export default function RocketPage() {
   }, [rocket, rocketId]);
 
   if (loading) {
-    return <h3>Loading..</h3>;
+    return (
+      <div className="rocket-page__full-page-container">
+        <p>Loading...</p>
+      </div>
+    );
   }
-  if (!rocket) {
-    return <h3>This rocket doesn't exist..</h3>;
+
+  if (!rocket && !loading) {
+    return (
+      <div className="rocket-page__full-page-container">
+        <p>This rocket doesn't seem to exist...</p>
+        <Link to='/' className="rocket-page__not-found-link">Home page</Link>
+      </div>
+    );
   }
 
   return (
