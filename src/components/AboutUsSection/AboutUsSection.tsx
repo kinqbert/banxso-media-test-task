@@ -9,7 +9,7 @@ export default function AboutUsSection() {
       <div className="about-us-section__video-wrapper">
         <img
           className="about-us-section__video"
-          src="./src/assets/images/video-preview.jpg"
+          src="./images/video-preview.jpg"
           alt="Video Preview Image"
         />
         <div className="about-us-section__video-play-button">
