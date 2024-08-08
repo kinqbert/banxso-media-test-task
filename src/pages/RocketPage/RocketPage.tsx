@@ -40,7 +40,7 @@ export default function RocketPage() {
     );
   }
 
-  if (!rocket && !loading) {
+  if (!rocket) {
     return (
       <div className="rocket-page__full-page-container">
         <p>This rocket doesn't seem to exist...</p>
