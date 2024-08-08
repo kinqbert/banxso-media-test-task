@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# Banxso Media Test Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a test task for Banxso Media. The task is to create a simple web application that gets information about rockets from the SpaceX API and displays it on a page. The application was made according to [design](https://www.figma.com/design/JTokTA6Xfcy9Kb62xRBRKv/Test-Junior?node-id=0-1&t=SnDF9hB8vd2wwcbR-0).
 
-Currently, two official plugins are available:
+Demo link: [DEMO](https://kinqbert.github.io/banxso-media-test-task/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Additionally, mock data has been created to display for slides and team members:
 
-## Expanding the ESLint configuration
+- [Slides mock info file](./public/api/slides.json)
+- [Team members mock info file](./public/api/team-members.json)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Sliders were implemented using [Swiper](https://swiperjs.com/react) library.
 
-- Configure the top-level `parserOptions` property like this:
+# Technologies used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SCSS](https://sass-lang.com/) - CSS preprocessor
+- [Swiper](https://swiperjs.com/react) - slider library
+- [Axios](https://axios-http.com/) - HTTP client
+- [React Router](https://reactrouter.com/) - routing library
+- [Vite](https://vitejs.dev/) - build tool
+
+# How to run
+
+1. Clone the repository
+
+```
+https://github.com/kinqbert/banxso-media-test-task.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install dependencies
+
+```
+npm install
+```
+
+3. Run the application
+
+```
+npm run dev
+```
+
+4. Open the application in the browser
+
+```
+http://localhost:5173
+```
+
+# Automatic deployment
+
+The project uses GitHub workflows to automatically deploy the application to GitHub Pages. The deployment is triggered when a new commit is pushed to the `master` branch. The deployment workflow can be found in the [.github/workflows](./.github/workflows) directory.
