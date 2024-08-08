@@ -1,6 +1,12 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
 .rocket-info {
+  margin-top: 32px;
+
+  &__title {
+    text-transform: uppercase;
+  }
+
   &__wrapper {
     max-height: 530px;
     margin-top: 32px;

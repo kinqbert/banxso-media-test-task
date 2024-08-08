@@ -3,12 +3,6 @@
 @import "../../styles/mixins.scss";
 
 .rocket-page {
-  &__title {
-    margin-top: 32px;
-
-    text-transform: uppercase;
-  }
-
   &__ship-full-width-slider {
     margin-top: 100px;
   }

@@ -23,14 +23,14 @@ export default function RocketPage() {
       getRocket(rocketId).then((response) => {
         setRocket(response);
 
-        if (rocket) {
+        if (response) {
           getSlides().then((response) => setSlides(response));
         }
 
         setLoading(false);
       });
     }
-  }, [rocket, rocketId]);
+  }, [rocketId]);
 
   if (loading) {
     return (

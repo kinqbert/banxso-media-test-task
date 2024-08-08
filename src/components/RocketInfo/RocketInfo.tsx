@@ -20,7 +20,7 @@ export default function RocketInfo({ rocket }: Props) {
   }, [rocket]);
 
   return (
-    <>
+    <div className="rocket-info">
       <h2 className="rocket-info__title">{rocket?.name}</h2>
       <div className="rocket-info__wrapper">
         <img
@@ -43,6 +43,6 @@ export default function RocketInfo({ rocket }: Props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
