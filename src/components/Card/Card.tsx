@@ -14,11 +14,11 @@ export default function Card({ rocket }: Props) {
 
   return (
     <div className="card">
-      <Link to={rocket.id}>
+      <Link to={`rockets/${rocket.id}`}>
         <img className="card__image" src={rocket.flickr_images[0]} alt="" />
       </Link>
       <div className="card__content">
-        <Link to={rocket.id}>
+        <Link to={`rockets/${rocket.id}`}>
           <p className="card__title">{rocket.name}</p>
         </Link>
 

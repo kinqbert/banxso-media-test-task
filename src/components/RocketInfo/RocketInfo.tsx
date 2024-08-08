@@ -17,7 +17,7 @@ export default function RocketInfo({ rocket }: Props) {
 
   useEffect(() => {
     setRocketProps(() => getRocketProps(rocket, true));
-  }, []);
+  }, [rocket]);
 
   return (
     <>

@@ -23,7 +23,6 @@ export default function FullWidthSlider({ slides }: Props) {
       onSwiper={(swiper) => {
         swiperRef.current = swiper;
       }}
-      loop={true}
       slidesPerView={1}
       spaceBetween={20}
       pagination={{ clickable: true, el: ".swiper-pagination" }}

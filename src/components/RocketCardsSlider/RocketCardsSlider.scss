@@ -13,7 +13,7 @@
   opacity: 0.4;
 
   &:not(:last-child) {
-    margin-right: 10px !important;
+    margin-right: 10px !important; // !important here is needed to overwrite default swiper styles
   }
 }
 

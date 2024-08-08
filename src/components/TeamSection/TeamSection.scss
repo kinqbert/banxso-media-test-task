@@ -44,12 +44,22 @@
     border-radius: 20px;
     background-color: $white;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
     &--inactive {
       opacity: 0.3;
-    }
-  }
 
-  &__button-icon {
-    
+      &:hover {
+        opacity: 0.3;
+      }
+    }
   }
 }

@@ -1,16 +1,29 @@
-import './Navigation.scss';
+import { Link } from "react-router-dom";
+import "./Navigation.scss";
 
 export default function Navigation() {
   return (
     <nav className="nav">
-      <div className="nav__logo">Logo</div>
+      <Link to="/">
+        <div className="nav__logo nav__button">Logo</div>
+      </Link>
       <ul className="nav__list">
-        <li className="nav__item">Home</li>
-        <li className="nav__item">About</li>
-        <li className="nav__item">QA</li>
-        <li className="nav__item">Contact form</li>
+        <Link to="/">
+          <li className="nav__item">Home</li>
+        </Link>
+        <Link to="/about">
+          <li className="nav__item">About</li>
+        </Link>
+        <Link to="/qa">
+          <li className="nav__item">QA</li>
+        </Link>
+        <Link to="/contact">
+          <li className="nav__item">Contact form</li>
+        </Link>
       </ul>
-      <button className="nav__contact-button">Contact form</button>
+      <Link to="/contact">
+        <div className="nav__contact-button nav__button">Contact form</div>
+      </Link>
     </nav>
   );
 }

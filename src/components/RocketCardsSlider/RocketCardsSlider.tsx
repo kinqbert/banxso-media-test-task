@@ -18,7 +18,6 @@ export default function RocketCardsSlider({ rockets }: Props) {
   return (
     <div className="rocket-cards-slider">
       <Swiper
-        loop={true}
         slidesPerView={3}
         spaceBetween={20}
         pagination={{ clickable: true }}
